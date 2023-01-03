@@ -6,7 +6,7 @@
 #    By: rthammat <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/24 18:15:31 by rthammat          #+#    #+#              #
-#    Updated: 2022/12/24 21:12:56 by rthammat         ###   ########.fr        #
+#    Updated: 2023/01/03 15:44:48 by rthammat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ $(NAME): $(SRCS)
 	$(CC) $(CFLAGS) $^ -o $@
 
 norminette:
-	norminette -R CheckForbiddenHeader *.h *.c
+	norminette -R CheckForbiddenSourceHeader *.h *.c
 
 clean:
 	rm -rf *.dSYM $(NAME)
